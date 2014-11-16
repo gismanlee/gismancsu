@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #a6a6a6;
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+}
+a:-webkit-any-link {
+  cursor: auto;
+}
+a:hover {
+  color: #fff;
+}
+ul,
+ol {
+  list-style: none;
+}
+li {
+  text-align: -webkit-match-parent;
+}
+p {
+  word-wrap: break-word;
+}
+dd {
+  display: block;
+}
+.talk,
+.address,
+.email,
+.lifepic,
+.heart,
+.like,
+.unlike,
+.date,
+.icon-song span,
+.icon-artist span,
+.icon-album span,
+.icon-like span {
+  background: url("../images/icons.png") no-repeat;
+}
+body {
+  color: #3f3e3c;
+  line-height: 1.5;
+  background: #333;
+  font: 12px "SimSun", "Arial Narrow", HELVETICA;
+}
+header {
+  width: 100%;
+  background: #222;
+  height: 70px;
+  border-bottom: #464647 1px solid;
+}
+header nav {
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+  padding-top: 15px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav li {
+  line-height: 40px;
+  display: inline;
+}
+header nav li a {
+  color: #e7e7e7;
+  display: block;
+  padding: 0 20px;
+  margin-right: 10px;
+  float: left;
+  transition: all 0.75s ease;
+}
+header nav li a:hover {
+  background: rgba(20,20,20,0.8);
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.1), inset 0px 1px 1px rgba(0,0,0,0.7);
+  border-radius: 6px;
+}
+#main {
+  width: 100%;
+  border-top: #000 1px solid;
+  clear: both;
+  overflow: hidden;
+}
+#info {
+  width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+  clear: both;
+}
+#info figure {
+  display: inline-block;
+  width: 630px;
+  height: 250px;
+  position: relative;
+  float: left;
+}
+#info figure figcaption {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(153,153,153,0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.75s ease-out;
+}
+#info figure figcaption strong {
+  display: block;
+  line-height: 40px;
+}
+#info figure:hover figcaption {
+  opacity: 1;
+}
+#card {
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.1), inset 0px 1px 1px rgba(0,0,0,0.7);
+  border-radius: 6px;
+  background: url("../images/quote-bg.png") no-repeat top right #2a2a2a;
+  width: 350px;
+  height: 250px;
+  float: right;
+  overflow: hidden;
+}
+#card h1 {
+  padding: 10px;
+}
+#card p {
+  padding: 0 0 0 40px;
+  line-height: 28px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  color: #89919a;
+}
+#card #linkmore {
+  margin: 15px 0 0 15px;
+}
+#card #linkmore li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+#card #linkmore li a {
+  height: 50px;
+  width: 50px;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.1), inset 0px 1px 1px rgba(0,0,0,0.7);
+  border-radius: 50%;
+  float: left;
+  margin: 0 6px;
+}
+#card #linkmore li .talk {
+  background-position: 12px 15px;
+}
+#card #linkmore li .address {
+  background-position: 11px -25px;
+}
+#card #linkmore li .email {
+  background-position: 11px -62px;
+}
+#card #linkmore li .lifepic {
+  background-position: 11px -101px;
+}
+#card #linkmore li .heart {
+  background-position: 11px -140px;
+}
+#blank {
+  height: 5px;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  clear: both;
+}
+#blogs {
+  width: 1000px;
+  margin: 0 auto 20px;
+}
+#blogs .bloglist {
+  width: 666px;
+  float: left;
+}
+#blogs .bloglist li {
+  border-right: #111 2px solid;
+  padding: 20px 0;
+}
+#blogs .bloglist li h2 a {
+  transition: all 1s ease;
+}
+#blogs .bloglist li h2 a:hover {
+  padding-left: 20px;
+}
+#blogs .bloglist li img {
+  width: 150px;
+  padding: 4px;
+  float: left;
+  margin: 0 20px 20px;
+  border-radius: 4px;
+}
+#blogs .bloglist li p {
+  line-height: 24px;
+  padding: 0 20px 20px;
+  height: 120px;
+  overflow: hidden;
+}
+#blogs .bloglist li .arrow_box {
+  background: #222;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1), inset 0 1px 1px rgba(0,0,0,0.7);
+  width: 630px;
+  color: #b9b9b9;
+  border-radius: 6px;
+  position: relative;
+}
+#blogs .bloglist li .arrow_box .ti {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-color: transparent transparent transparent #111;
+  position: absolute;
+  left: 630px;
+  top: 20px;
+}
+#blogs .bloglist li .arrow_box .ci {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 658px;
+  top: 16px;
+  background: #000;
+  border: 2px solid #333;
+}
+#blogs .bloglist li .arrow_box .title {
+  height: 40px;
+  padding: 0 0 10px 20px;
+  font: 16px/50px "Microsoft YaHei", "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+#blogs .bloglist li .arrow_box .textinfo {
+  overflow: hidden;
+}
+#blogs .bloglist li .arrow_box .details {
+  background: rgba(1,1,1,0.3);
+  border-radius: 0 0 6px 6px;
+  padding: 0 10px;
+}
+#blogs .bloglist li .arrow_box .details li {
+  line-height: 24px;
+  display: inline;
+  font-size: 11px;
+  margin-right: 10px;
+}
+#blogs .bloglist li .arrow_box .details a {
+  color: #3f3e3c;
+  transition: all 1s ease;
+}
+#blogs .bloglist li .arrow_box .details a:hover {
+  color: #933;
+}
+#blogs .bloglist li .arrow_box .details .like {
+  float: right;
+  padding: 0 0 0 14px;
+  background-position: 0 -220px;
+}
+#blogs .bloglist li .arrow_box .details .unlike {
+  float: right;
+  padding: 0 0 0 14px;
+  background-position: 0 -240px;
+}
+#blogs .bloglist li .arrow_box .details .date {
+  padding: 0 0 0 18px;
+  background-position: 0 -208px;
+}
+aside {
+  width: 310px;
+  float: right;
+  margin: 20px 0;
+}
+aside div {
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.1), inset 0px 1px 1px rgba(0,0,0,0.7);
+  border-radius: 6px;
+  padding: 15px;
+  background: #222;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+aside div h2 {
+  margin-bottom: 10px;
+  text-shadow: #000 1px 1px 1px;
+  color: #ccc;
+}
+.tuijian ol li:nth-child(-n+3) span {
+  width: 24px;
+  color: #999;
+}
+.tuijian ol li:nth-child(-n+3) strong {
+  font-size: 24px;
+}
+.tuijian ol li:first-child span {
+  width: 39px;
+  color: #f8490b;
+}
+.tuijian ol li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 24px;
+}
+.tuijian ol li span {
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+}
+.tuijian ol li span:before {
+  content: "0";
+}
+.toppic ul li:nth-child(2) {
+  margin: 15px 0;
+}
+.toppic ul li img {
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+}
+.toppic ul li a {
+  display: block;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+.clicks li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 24px;
+}
+.clicks li span a {
+  padding: 0 5px;
+  color: #366;
+}
+.clicks span:before {
+  content: "[";
+}
+.clicks span:after {
+  content: "]";
+}
+.searchform {
+  padding: 10px;
+  overflow: hidden;
+}
+.searchform input {
+  background: rgba(0,0,0,0.25) url("../images/icons.png") no-repeat 3px -318px;
+  border: 1px solid #111;
+  width: 220px;
+  line-height: 30px;
+  color: #b9b9b9;
+  padding-left: 30px;
+}
+.art {
+  width: 130px;
+  float: left;
+  background-size: 120px;
+}
+.art img {
+  width: 90px;
+  height: 90px;
+  margin-left: 11px;
+}
+.viny dl dd {
+  color: #b9b9b9;
+  line-height: 24px;
+}
+.viny dl dd span {
+  width: 12px;
+  height: 20px;
+  margin-right: 7px;
+  float: left;
+  display: block;
+}
+.viny .icon-song span {
+  background-position: -33px -344px;
+}
+.viny .icon-artist span {
+  background-position: -16px -344px;
+}
+.viny .icon-album span {
+  background-position: 1px -344px;
+}
+.viny .music audio {
+  width: 100%;
+  padding-top: 10px;
+}
+#tbox {
+  width: 54px;
+  float: right;
+  position: fixed;
+  right: 50px;
+  bottom: 15px;
+}
+#changyan {
+  width: 100%;
+  border-top: #000 1px solid;
+  overflow: hidden;
+  clear: both;
+  background: #1d1d1d;
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09);
+}
+#SOHUCS {
+  width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+  clear: both;
+}
+#author {
+  background: rgba(0,0,0,0.55);
+  overflow: hidden;
+}
+#author p {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}

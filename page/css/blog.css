@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #a6a6a6;
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+}
+a:hover {
+  color: #fff;
+}
+li {
+  display: list-item;
+}
+ul {
+  list-style: none;
+}
+body {
+  color: #3f3e3c;
+  line-height: 1.5;
+  background: #333;
+  font: 12px "SimSun", "Arial Narrow", HELVETICA;
+}
+header {
+  width: 100%;
+  background: #222;
+  height: 70px;
+  border-bottom: #464647 1px solid;
+}
+header nav {
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+  padding-top: 15px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav li {
+  line-height: 40px;
+  display: inline;
+}
+header nav li a {
+  color: #e7e7e7;
+  display: block;
+  padding: 0 20px;
+  margin-right: 10px;
+  float: left;
+  transition: all 0.75s ease;
+}
+header nav li a:hover {
+  background: rgba(20,20,20,0.8);
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.1), inset 0px 1px 1px rgba(0,0,0,0.7);
+  border-radius: 6px;
+}
+#main {
+  width: 100%;
+  border-top: #000 1px solid;
+  clear: both;
+  overflow: hidden;
+}
+#blog {
+  width: 1000px;
+  margin: 0 auto 20px;
+}
+#blog ul {
+  padding: 0 30px 15px 30px;
+  overflow: hidden;
+}
+#blog ul p {
+  line-height: 24px;
+  margin: 10px 0;
+  text-indent: 2em;
+}
+#content {
+  width: 640px;
+  float: left;
+  margin: 20px 0;
+  overflow: hidden;
+  color: #333;
+  background: #eaeaea;
+  padding: 10px;
+  border-radius: 6px;
+}
+h2.blog_nav {
+  border-bottom: #247979 3px solid;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 48px;
+  height: 40px;
+}
+h2.blog_nav a {
+  background: #247979;
+  color: #fff;
+  padding: 10px;
+}
+.blog_title {
+  text-align: center;
+}
+.blog_box {
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 30px 10px 30px;
+  color: #666;
+  border: #ccc 1px dashed;
+}
+.blog_other h2 {
+  border-bottom: #ccc 2px solid;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 48px;
+  height: 40px;
+}
+.blog_other ul {
+  padding: 0 30px 0 30px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.blog_other li {
+  line-height: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 20px;
+}
+aside {
+  width: 310px;
+  float: right;
+  margin: 20px 0;
+}
+aside div {
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset 0px 1px 1px rgba(0,0,0,0.7);
+  border-radius: 6px;
+  padding: 15px;
+  background: #222;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+aside div #search {
+  padding: 10px;
+  overflow: hidden;
+}
+aside div #search input {
+  background: rgba(0,0,0,0.25) url("../images/icons.png") no-repeat 3px -318px;
+  border: 1px solid #111;
+  line-height: 30px;
+  width: 220px;
+  color: #b9b9b9;
+  padding-left: 30px;
+}
+aside #sunnav li {
+  float: left;
+  line-height: 36px;
+  width: 100%;
+  text-align: center;
+}
+aside #sunnav li:first-child {
+  background: #1a8a8a;
+}
+aside #sunnav li:nth-child(2) {
+  background: #e7a82b;
+}
+aside #sunnav li:nth-child(3) {
+  background: #e72b2b;
+}
+aside #sunnav li:last-child {
+  background: #085a5a;
+}
+aside #tuijian ol li:nth-child(-n+3) span {
+  width: 24px;
+  color: #999;
+}
+aside #tuijian ol li:nth-child(-n+3) strong {
+  font-size: 24px;
+}
+aside #tuijian ol li:first-child span {
+  width: 39px;
+  color: #f8490b;
+}
+aside #tuijian ol li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 24px;
+}
+aside #tuijian ol li span {
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+}
+aside #tuijian ol li span:before {
+  content: "0";
+}
+aside #clicks li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 24px;
+}
+aside #clicks li span a {
+  padding: 0 5px;
+  color: #366;
+}
+aside #clicks span:before {
+  content: "[";
+}
+aside #clicks span:after {
+  content: "]";
+}
+footer {
+  width: 100%;
+  background: #1d1d1d;
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09);
+}
+#changyan {
+  width: 1000px;
+  padding: 0 10px 0 10px;
+  margin: 0 auto 20px;
+  border-top: #000 1px solid;
+  overflow: hidden;
+  clear: both;
+  background: #dfdfdf;
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09);
+}
+#SOHUCS {
+  width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+  clear: both;
+}
+#author {
+  background: rgba(0,0,0,0.55);
+  overflow: hidden;
+}
+#author p {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
